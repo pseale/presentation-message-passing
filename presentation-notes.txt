@@ -1,0 +1,70 @@
+-Welcome
+-I'm Peter Seale - @pseale
+   - Understanding this is a deep topic, I have spent the last month growing 
+      my neckbeard, take my 1 month of 
+      neckbeard growth as a metaphor for my authority on the topic. No majestic
+      flowing Gandalf beard, just 1 month's worth of authority 
+
+-Goal: SUCCESS IN LIFE
+  - success in life 
+      <- better programming 
+          <- more tools in your toolbox 
+             <- tool: message passing
+  - therefore, learning message passing will make you a SUCCESS
+
+-Context: learning how to program OOP style
+  - at the top of the diagram are the easy, objectively measured parts:
+    - C# syntax
+    - cohesion/coupling
+    - Gang of Four/Head First Design patterns
+  - towards the bottom, more subjective/contextual, no absolute universal "better" truth
+    - SOLID - objective measures, subjectively improved code
+    - DDD's domain model/ports and adapters/hexagon/onion architecture
+    - CQRS
+    - TDD
+    - BDD
+    - message passing
+
+-Re-emphasize: message passing is USEFUL but not UNIVERSALLY USEFUL. it's a TOOL
+
+- Alan Kay quote? - put it on screen while I ask the question
+
+- With that in mind, I need to gauge the audience. Who can name some places you SEE message passing in action?
+  You don't have to know everything about message passing, just say names of things with "message" in them.
+  Looking for answers:
+  - Biztalk /NServiceBus / MassTransit (.NET message bus)
+  - MSMQ or RabbitMQ - durable messages
+  - Azure uses durable messages
+  - JavaScript frameworks that listen for server events
+  - Event Aggregator as seen in WPF
+  - Almost anywhere you have events
+
+- Second question: what languages are known for message passing features?
+  - Erlang
+  - Scala
+  - Go
+  - Smalltalk
+  - probably others
+
+- Great, you have passed the job interview, you're all hired.
+
+- What is message passing?
+   - definition
+
+- More interesting question: what makes message passing different from calling procedures?
+  - Don't answer, we'll do this by example
+
+- example: Tic Tac Toe (show procedural code)
+  - This is GOOD CODE, it works and is "true to itself".
+  - Explain what it does
+- now show message passing code on right side
+  - This is ALSO GOOD CODE.
+  - Difference: less chatty, information hiding/encapsulation of behavior
+
+
+
+
+Links:
+https://en.wikipedia.org/wiki/Message_passing
+http://fitzgeraldnick.com/weblog/39/
+	
