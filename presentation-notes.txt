@@ -61,8 +61,35 @@
   - This is ALSO GOOD CODE.
   - Difference: less chatty, information hiding/encapsulation of behavior
 
+- Now get "players" for the tic tac toe game
+ - one player
+- example 2: your classic WCF service call.
+  - Procedural
+    - Makes a call to the web service.
+    - Data is returned.
+    - Use the data.
+  - Positives:
+    - Simple, all fits on one page, top to bottom.
+    - No threads
+  - Negatives:
+    - What happens during a timeout? Connection closed? What happens if it's slow?
+  - Message passing
+    - Sends message. Terminates.
+    - Receives message.
+    - Use the data.
+    -Positives:
+     -Simpler for the caller
+    -Negatives:
+     -In .NET it takes INFRASTRUCTURE to make this work
+     -Threads/no longer a simple Von Neumann mental model
 
 
+
+
+Books:
+ - Object Thinking
+ - Growing Object Oriented Systems, Guided By Tests (GOOS book)
+ - Test Driven Development by Kent Beck
 
 Links:
 https://en.wikipedia.org/wiki/Message_passing
