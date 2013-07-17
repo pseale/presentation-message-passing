@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagePassingDemoSnippets"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeProcedural", "..\TicTacToeProcedural\TicTacToeProcedural.csproj", "{72547B8F-A7D8-4C1A-AB4F-13F2F1CCAC78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeObjects", "TicTacToeObjects\TicTacToeObjects.csproj", "{D0F9CBE0-E55A-4389-9EF2-6EB16E3A3D8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{72547B8F-A7D8-4C1A-AB4F-13F2F1CCAC78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72547B8F-A7D8-4C1A-AB4F-13F2F1CCAC78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72547B8F-A7D8-4C1A-AB4F-13F2F1CCAC78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0F9CBE0-E55A-4389-9EF2-6EB16E3A3D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0F9CBE0-E55A-4389-9EF2-6EB16E3A3D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0F9CBE0-E55A-4389-9EF2-6EB16E3A3D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0F9CBE0-E55A-4389-9EF2-6EB16E3A3D8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
