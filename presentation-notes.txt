@@ -57,32 +57,21 @@
 - example: Tic Tac Toe (show procedural code)
   - This is GOOD CODE, it works and is "true to itself".
   - Explain what it does
-- now show message passing code on right side
-  - This is ALSO GOOD CODE.
-  - Difference: less chatty, information hiding/encapsulation of behavior
+- now show OO code
+  - This is also GOOD CODE. It works and is "true to itself."
+  - Actually I lied, OO code is all subjectively bad. Hard to say if it's "good"
+  - But at least roles are well defined, objects are small, and there are 
+    no obvious (to me) potential improvements.
+
+- now show OO code on right side
+  - Ok, see how similar the procedural code is from the OO code?
+  - Name 1 improvement the OO code gives.
+  - Disclaimer: this is Tic Tac Toe, 99% of anything you do will be 
+    more complex. Keep thinking of how this could be useful on bigger projects.
+  - Difference: behavior is organized into objects, abstractions hide implementation
 
 - Now get "players" for the tic tac toe game
  - one player
-- example 2: your classic WCF service call.
-  - Procedural
-    - Makes a call to the web service.
-    - Data is returned.
-    - Use the data.
-  - Positives:
-    - Simple, all fits on one page, top to bottom.
-    - No threads
-  - Negatives:
-    - What happens during a timeout? Connection closed? What happens if it's slow?
-  - Message passing
-    - Sends message. Terminates.
-    - Receives message.
-    - Use the data.
-    -Positives:
-     -Simpler for the caller
-    -Negatives:
-     -In .NET it takes INFRASTRUCTURE to make this work
-     -Threads/no longer a simple Von Neumann mental model
-
 
 
 
