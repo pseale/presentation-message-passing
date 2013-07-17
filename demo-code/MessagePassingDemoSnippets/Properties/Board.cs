@@ -16,8 +16,17 @@ namespace MessagePassingDemoSnippets.Properties
       _board[message.Row, message.Col] = message.Mark;
 
       //publish message
-      var boardUpdatedMessage = new BoardUpdatedMessage {Board = CloneBoard()};
+      var boardUpdatedMessage = new BoardUpdatedMessage {Board = CloneBoard(), IsFull = IsFull()};
       MessageBus.Publish(boardUpdatedMessage);
+    }
+
+    private bool IsFull()
+    {
+      for (int i = 0; i < 3; i++)
+        for (int j = 0; j < 3; j++)
+          if (_board[i, j] != ' ')
+            return false;
+      return true;
     }
 
     private int[,] CloneBoard()
@@ -33,6 +42,7 @@ namespace MessagePassingDemoSnippets.Properties
   public class BoardUpdatedMessage
   {
     public int[,] Board { get; set; }
+    public bool IsFull { get; set; }
   }
 
   public class PlayerMovedMessage
