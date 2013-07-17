@@ -70,8 +70,41 @@
     more complex. Keep thinking of how this could be useful on bigger projects.
   - Difference: behavior is organized into objects, abstractions hide implementation
 
+- ok. We're almost ready for message passing. We're going to take this OO sample and
+  send 1 message. This isn't a total conversion to message passing, only 1 message.
+ - Message: The board was updated. 
+ - This is a C# event, not even anything unusual.
+ - -- awkward
+     - but useful in some situations.
+  -but awkward. Are you ready for the next round?
+
 - Now get "players" for the tic tac toe game
- - one player
+ - one player per object
+ - explain each object's responsibilities and give them a printed sheet for them only
+ - Play entire game of tic tac toe using messages
+
+- Reflection time: what was weird about that? Was it natural or unnatural?
+
+- Let's see the code. For just 1 of the simplest objects, the Board.
+  - note in constructor we subscribe to a message
+  - note in method we do TWO THINGS: 1) work, 2) publish a message
+  - note I clone the board, this is an aside
+  - Still awkward? Look into registering messages with 
+    IoC, people blog about this topic a lot
+
+- More reflection: questions? Can you now see why message passing 
+  is different (and sometimes better)?
+
+- Takeaways (read slides, explain)
+
+- Thank you, are there any questions
+
+- Further resources: remember, only 1 month of beard growth. 
+  - Udi Dahan's blog
+  - Ayende's blog (architecture/messaging tags)
+  - Other communities
+  - Lots of talk about durable messages, not as much about just message passing
+
 
 
 
