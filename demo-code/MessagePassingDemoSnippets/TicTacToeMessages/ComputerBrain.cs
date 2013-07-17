@@ -2,19 +2,22 @@
 {
   public class ComputerBrain
   {
-    private readonly Board _board;
+    private char[,] _board;
 
-    public ComputerBrain(Board board)
+    public ComputerBrain()
+    {
+    }
+
+    public void StoreBoardUpdate(char[,] board)
     {
       _board = board;
     }
 
     public Move DetermineNextMove()
     {
-      var board = _board.GetBoardDataForAi();
       //terrible AI, enjoy
       for (int i = 0; i < 9; i++)
-        if (board[i / 3, i % 3] == ' ')
+        if (_board[i / 3, i % 3] == ' ')
           return new Move(i / 3, i % 3, 'O');
 
       //failure case, board is full

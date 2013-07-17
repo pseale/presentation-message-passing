@@ -4,6 +4,8 @@ namespace TicTacToeMessages
 {
   public class Board
   {
+    public event Action<char[,]> Updated;
+
     private readonly char[,] _board = new char[3, 3];
 
     public Board()
@@ -11,23 +13,6 @@ namespace TicTacToeMessages
       for (int i = 0; i < 3; i++)
         for (int j = 0; j < 3; j++)
           _board[i, j] = ' ';
-    }
-
-    public void Draw()
-    {
-      Console.WriteLine();
-      Console.WriteLine("\t| A | B | C |");
-      Console.WriteLine("\t+===+===+===+");
-      DrawRow(_board, 0);
-      DrawRow(_board, 1);
-      DrawRow(_board, 2);
-    }
-
-    private static void DrawRow(char[,] board, int rowOffset)
-    {
-      Console.WriteLine("  {3}\t| {0} + {1} + {2} +", board[rowOffset, 0], board[rowOffset, 1], board[rowOffset, 2],
-                        rowOffset + 1);
-      Console.WriteLine("\t+===+===+===+");
     }
 
     public bool PlayerWon(char mark)
@@ -50,6 +35,7 @@ namespace TicTacToeMessages
     public void Update(Move move)
     {
       _board[move.Row, move.Col] = move.Mark;
+      OnUpdated(CloneBoardData());
     }
 
     public bool IsFull()
@@ -60,7 +46,7 @@ namespace TicTacToeMessages
       return true;
     }
 
-    public char[,] GetBoardDataForAi()
+    private char[,] CloneBoardData()
     {
       var clone = new char[3, 3];
       for (int i = 0; i < 3; i++)
@@ -68,6 +54,12 @@ namespace TicTacToeMessages
           clone[i, j] = _board[i, j];
 
       return clone;
+    }
+
+    protected virtual void OnUpdated(char[,] board)
+    {
+      Action<char[,]> handler = Updated;
+      if (handler != null) handler(board);
     }
   }
 }

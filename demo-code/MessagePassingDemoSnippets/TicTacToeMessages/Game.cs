@@ -9,11 +9,6 @@
       _board = board;
     }
 
-    public void DrawInitialBoard()
-    {
-      _board.Draw();
-    }
-
     public bool Finished()
     {
       if (PlayerWon('X'))
@@ -48,7 +43,6 @@
     public void Update(Move move)
     {
       _board.Update(move);
-      _board.Draw();
     }
   }
 }

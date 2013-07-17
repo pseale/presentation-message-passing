@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TicTacToeMessages
 {
@@ -11,10 +7,15 @@ namespace TicTacToeMessages
     static void Main(string[] args)
     {
       var board = new Board();
+      var boardUi = new BoardUi();
       var game = new Game(board);
       var playerMoveReader = new PlayerMoveReader();
-      var computerBrain = new ComputerBrain(board);
-      game.DrawInitialBoard();
+      var computerBrain = new ComputerBrain();
+      //Demo warning: this may be a bad practice because I'm not unsubscribing what I subscribe,  
+      //and this may cause memory leaks
+      board.Updated += boardUi.Draw;
+      board.Updated += computerBrain.StoreBoardUpdate;
+      boardUi.DrawInitialBoard();
       while (!game.Finished())
       {
         var move = playerMoveReader.Read();
