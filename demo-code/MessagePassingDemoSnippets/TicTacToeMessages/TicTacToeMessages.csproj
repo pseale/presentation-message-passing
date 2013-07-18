@@ -53,12 +53,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TicTacToeObjects\TicTacToeObjects.csproj">
-      <Project>{D0F9CBE0-E55A-4389-9EF2-6EB16E3A3D8C}</Project>
-      <Name>TicTacToeObjects</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

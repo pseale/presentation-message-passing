@@ -7,14 +7,14 @@ namespace MessagePassingDemoSnippets.Properties
     readonly int[,] _board = new int[3,3];
     public Board()
     {
-      MessageBus.Subscribe<PlayerMovedMessage>(UpdateBoard);
+      MessageBus.Subscribe<PlayerMovedMessage>(UpdateBoard);  
     }
 
     private void UpdateBoard(PlayerMovedMessage message)
     {
       //do work
       _board[message.Row, message.Col] = message.Mark;
-
+  
       //publish message
       var boardUpdatedMessage = new BoardUpdatedMessage {Board = CloneBoard(), IsFull = IsFull()};
       MessageBus.Publish(boardUpdatedMessage);
