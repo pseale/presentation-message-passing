@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MessagePassingDemoSnippets.Properties
+namespace MessagePassingDemoSnippets
 {
   public class Board
   {
