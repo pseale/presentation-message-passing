@@ -1,9 +1,14 @@
+Message from Peter: Hello! Just so you know, I've included these notes for completeness' sake, not really
+  to help you walk through my presentation. My notes are not anywhere NEAR a formal talk outline or "speech notes"
+  - instead they're what I write to myself to help figure out what my talk will be like. Hilariously when presenting,
+  I never actually check these notes (for whatever reason, I just never do), so the notes may contain more
+  or completely different information than what I say in my talks. Enjoy.
+
 -Welcome
 -I'm Peter Seale - @pseale
    - Understanding this is a deep topic, I have spent the last month growing 
-      my neckbeard, take my 1 month of 
-      neckbeard growth as a metaphor for my authority on the topic. No majestic
-      flowing Gandalf beard, just 1 month's worth of authority 
+      my neckbeard, take my 1 month of  neckbeard growth as a metaphor for my authority 
+      on the topic. No majestic flowing Gandalf beard, just 1 month's worth of authority 
 
 -Goal: SUCCESS IN LIFE
   - success in life 
@@ -33,10 +38,11 @@
   You don't have to know everything about message passing, just say names of things with "message" in them.
   Looking for answers:
   - Biztalk /NServiceBus / MassTransit (.NET message bus)
-  - MSMQ or RabbitMQ - durable messages
+  - MSMQ or RabbitMQ or *MQ - durable messages
   - Azure uses durable messages
   - JavaScript frameworks that listen for server events
   - Event Aggregator as seen in WPF
+  - Domain Events
   - Almost anywhere you have events
 
 - Second question: what languages are known for message passing features?
@@ -70,20 +76,10 @@
     more complex. Keep thinking of how this could be useful on bigger projects.
   - Difference: behavior is organized into objects, abstractions hide implementation
 
-- ok. We're almost ready for message passing. We're going to take this OO sample and
-  send 1 message. This isn't a total conversion to message passing, only 1 message.
- - Message: The board was updated. 
- - This is a C# event, not even anything unusual.
- - -- awkward
-     - but useful in some situations.
-  -but awkward. Are you ready for the next round?
-
 - Now get "players" for the tic tac toe game
- - one player per object
+ - one player per object/"process"
  - explain each object's responsibilities and give them a printed sheet for them only
  - Play entire game of tic tac toe using messages
-
-- Reflection time: what was weird about that? Was it natural or unnatural?
 
 - Let's see the code. For just 1 of the simplest objects, the Board.
   - note in constructor we subscribe to a message
@@ -92,8 +88,45 @@
   - Still awkward? Look into registering messages with 
     IoC, people blog about this topic a lot
 
+- Reflection time: what was weird about that? Was it natural or unnatural?
+
+- ok. We're almost ready for message passing. We're going to take this OO sample and
+  send 1 message. This isn't a total conversion to message passing, only 1 message.
+ - Message: The board was updated. 
+ - This is a C# event, not even anything unusual.
+ - -- awkward
+     - but useful in some situations.
+  -but awkward. 
+
+
 - More reflection: questions? Can you now see why message passing 
   is different (and sometimes better)?
+
+WEB SERVICES ARE BAD AND YOU SHOULD BE ASHAMED OF YOURSELF
+- Not actually true.
+- BUT, when web services (SOAP or REST) are used for inter-system interfaces, bad things happen.
+- .NET has good tooling for SOAP (and recently, REST) web services so we naturally use them, even WHEN WE SHOULD NOT!!!~~
+
+- DEMO: Accounts Payable.
+ - Introduce the demo. Our system is the .NET app that pays IT contractors, and interfaces with SAP.
+   .NET app is named "Payola".
+ - SAP system (named "Umweltverschmutzung") is written in ABAP and the nouns are all in German and we
+   are all a little afraid of it, so we made a pretty web service-based interface for paying invoices.
+ - Assuming we have perfect security (i.e. for the purposes of the demo, we have no potential security flaws),
+   we are going to try and figure out how to break this system.
+ - I need 2 volunteers. One to be Payola and one to be Umweltverschmutzung.
+- SCENARIOS:
+  - SCENARIO 1: Payola sucessfully sends a message to U17g, receives a response, everything's good.
+  - SCENARIO 2: Payola sends request to U17g, U17g sends a "failed" response. What does Payola do?
+  - SCENARIO 3: Payola sends request to U17g, U17g waits 5000 seconds then sends an "ok". What does Payola do?
+  - SCENARIO 4: SAP is down. What does Payola do?
+  - SCENARIO 5: Payola crashes before sending the request. What happened to the invoice?
+  - SCENARIO 6: Payola sucessfully sends a message to U17g, receives a response, then Payola crashes. What happened to the invoice?
+  - SCENARIO 7: Payola sucessfully sends a message to U17g, U17g sends an "ok" response but the response is eating by a network security device/firewall (this is real). What does Payola do?
+  - SCENARIO 8: Payola experiences complete data loss and must restore from last night's backups. U17g is unaffected/ok.
+
+- Reflection: can you solve each of these problems without durable messaging?
+- Reflection: but can you imagine how durable messages make all this easier?
 
 - Takeaways (read slides, explain)
 
@@ -109,9 +142,9 @@
 
 
 Books:
- - Object Thinking
  - Growing Object Oriented Systems, Guided By Tests (GOOS book)
  - Test Driven Development by Kent Beck
+ - Object Thinking
 
 Links:
 https://en.wikipedia.org/wiki/Message_passing
