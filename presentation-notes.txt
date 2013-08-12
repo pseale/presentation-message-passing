@@ -127,6 +127,9 @@ WEB SERVICES ARE BAD AND YOU SHOULD BE ASHAMED OF YOURSELF
 
 - Reflection: can you solve each of these problems without durable messaging?
 - Reflection: but can you imagine how durable messages make all this easier?
+- Reflection: what new problems do you get with durable messages?
+
+- Are there any questions before I finish?
 
 - Takeaways (read slides, explain)
 
