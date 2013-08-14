@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" dslVersion="1.0.0.0" Id="d7d419eb-9265-4b44-9c62-59bc418a6517" name="Payola_SendInvoiceData" mode="DotNet" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="a5ec4bee-4084-450d-9b05-365023cc2aa0" name="Payola_SendInvoiceData" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification Id="b6ce0d1b-f09a-40a4-8f8a-76c5ad21e0b8" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="2c551781-11c5-4452-803d-b585aa65eb69" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="fa0991a6-f3ee-42dc-934a-6a5251ad42de" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="b272413c-e39e-41c0-9aa8-c6ec05701185" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="1c139ac6-3638-40a2-85f4-75f864573d3b" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="2086541b-2f1a-44b0-a06e-3ac33618060b" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="767221d0-a397-4842-bb82-1130a7632b93" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="121f3b3c-273e-4842-9a75-1a93b728ebbe" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="5531fc54-3ea0-4930-b810-abcc19e7b816" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="3eac5aaa-690f-451a-9e49-d7de55526c9a" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="7a97ffa5-75cf-4770-a265-7686e90f3f28" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="8b6ee6ba-1187-49d0-b343-8d6eeed13d24" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="fa0991a6-f3ee-42dc-934a-6a5251ad42de" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="8fcf7b8c-86ba-4c04-acb8-439b12900194" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget Id="32d4a7d3-1d0c-44e1-b28e-d21627e605c4" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="b272413c-e39e-41c0-9aa8-c6ec05701185" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment Id="07395675-ac94-4db9-b479-5fe90e60f099" name="CombinedFragment1" interactionOperator="Alt" customInteractionOperator="Try">
+            <coveredLifelines>
+              <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+              <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+              <lifelineMoniker Id="5fa0e789-c656-42d2-843d-597729914727" LastKnownName="SAP" />
+              <lifelineMoniker Id="a893887c-dc39-4f5d-87ab-b789bb7912ec" LastKnownName="Logger" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="2d82f7df-7185-405a-9ef3-f0d6483bcbec" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+                  <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+                  <lifelineMoniker Id="5fa0e789-c656-42d2-843d-597729914727" LastKnownName="SAP" />
+                  <lifelineMoniker Id="a893887c-dc39-4f5d-87ab-b789bb7912ec" LastKnownName="Logger" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="76256124-7bc6-4e47-938e-f07a8830a83e" guardText="try" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="1c139ac6-3638-40a2-85f4-75f864573d3b" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="121f3b3c-273e-4842-9a75-1a93b728ebbe" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="7fd62edf-c4a8-4973-9e3c-03a415238555" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="7e8f2c64-8d67-4043-a19c-56ca96a3b218" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="16ccaf11-4203-4b3c-966c-82fd2bb7c522" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="baec2c13-b551-4cad-b107-cf23cc160e19" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="52c5376f-c9f1-4887-bce7-570600e49c4a" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="be0c2d38-d50b-47bf-a27d-740d8b1a9f00" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+              <interactionOperand Id="4a22516c-8b80-4030-b633-c07b5a02873a" name="InteractionOperand2">
+                <coveredLifelines>
+                  <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+                  <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+                  <lifelineMoniker Id="5fa0e789-c656-42d2-843d-597729914727" LastKnownName="SAP" />
+                  <lifelineMoniker Id="a893887c-dc39-4f5d-87ab-b789bb7912ec" LastKnownName="Logger" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="b29a736d-da03-4ba1-9420-ced734b80777" guardText="catch (Exception)" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="5531fc54-3ea0-4930-b810-abcc19e7b816" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="8b6ee6ba-1187-49d0-b343-8d6eeed13d24" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="0a17eddc-2f27-4631-8c2e-e1bdf00c3c8f" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="346b4809-69a9-4623-9a37-599e8201b0e7" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="1eaa6a92-a133-4c6a-85a9-ce30e246e217" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="cafc651f-f84d-4047-8e0f-8f7ebf06ab97" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="428777a1-a53b-46fc-8e6c-70ca527c1fdf" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="dc76bc78-97da-4fd8-ad6c-f2385b7ee83b" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="52c5376f-c9f1-4887-bce7-570600e49c4a" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a893887c-dc39-4f5d-87ab-b789bb7912ec" LastKnownName="Logger" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="1c139ac6-3638-40a2-85f4-75f864573d3b" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="16ccaf11-4203-4b3c-966c-82fd2bb7c522" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5fa0e789-c656-42d2-843d-597729914727" LastKnownName="SAP" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="7fd62edf-c4a8-4973-9e3c-03a415238555" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="8b4248b4-141b-44f6-9266-4b95f2ffd46a" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="a7e855b5-1397-4f18-ad6d-61434995d3a7" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="15292d21-1098-4625-b224-d1cfe64e2cba" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="7d4e25e4-c3a4-46d7-9c08-12fe1dacede8" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="27f9e2a8-d8f3-4202-a790-7b8c5cf72b25" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="f3473b35-44f4-42eb-bcf7-a5da817a2a50" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="22d13f72-2e4c-4d26-b3e3-422c934a821c" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="15292d21-1098-4625-b224-d1cfe64e2cba" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="17c5cdfd-8acb-4f18-89cf-c1c9ccf71510" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2086541b-2f1a-44b0-a06e-3ac33618060b" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7d4e25e4-c3a4-46d7-9c08-12fe1dacede8" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="1e550caa-2982-4cad-ae53-c60e0b2029c7" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5fa0e789-c656-42d2-843d-597729914727" LastKnownName="SAP" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="ce8e75df-dc04-45ed-bc46-3d5cb088f1e1" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="9da20f8b-88b5-4d08-bfe0-0e6470cd8453" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="209c72ca-4ace-43f5-875c-cb42a2452c12" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="42ab1c63-9542-44fd-aceb-4e1be0aaf780" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="9da20f8b-88b5-4d08-bfe0-0e6470cd8453" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="e2f7fd4f-7c70-4802-8065-f25db0888bd9" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5fa0e789-c656-42d2-843d-597729914727" LastKnownName="SAP" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="27f9e2a8-d8f3-4202-a790-7b8c5cf72b25" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="209c72ca-4ace-43f5-875c-cb42a2452c12" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5fa0e789-c656-42d2-843d-597729914727" LastKnownName="SAP" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="42ab1c63-9542-44fd-aceb-4e1be0aaf780" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5fa0e789-c656-42d2-843d-597729914727" LastKnownName="SAP" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="f3473b35-44f4-42eb-bcf7-a5da817a2a50" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="ce8e75df-dc04-45ed-bc46-3d5cb088f1e1" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="69eed9c9-fd3e-4f7e-8669-2884e4207aa2" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5fa0e789-c656-42d2-843d-597729914727" LastKnownName="SAP" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="22d13f72-2e4c-4d26-b3e3-422c934a821c" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="767221d0-a397-4842-bb82-1130a7632b93" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="a7e855b5-1397-4f18-ad6d-61434995d3a7" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3239b733-7eb8-4af7-87a0-59103fd37338" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="7e8f2c64-8d67-4043-a19c-56ca96a3b218" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="121f3b3c-273e-4842-9a75-1a93b728ebbe" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="baec2c13-b551-4cad-b107-cf23cc160e19" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5fa0e789-c656-42d2-843d-597729914727" LastKnownName="SAP" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="be0c2d38-d50b-47bf-a27d-740d8b1a9f00" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a893887c-dc39-4f5d-87ab-b789bb7912ec" LastKnownName="Logger" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="428777a1-a53b-46fc-8e6c-70ca527c1fdf" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a893887c-dc39-4f5d-87ab-b789bb7912ec" LastKnownName="Logger" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="1eaa6a92-a133-4c6a-85a9-ce30e246e217" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5fa0e789-c656-42d2-843d-597729914727" LastKnownName="SAP" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="0a17eddc-2f27-4631-8c2e-e1bdf00c3c8f" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="5531fc54-3ea0-4930-b810-abcc19e7b816" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="bcb47eb6-20d8-4919-a17c-e937f145b056" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="a893887c-dc39-4f5d-87ab-b789bb7912ec" LastKnownName="Logger" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="d6c78f61-b43f-496d-a5c0-1b0dd97a93d6" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="a53044e0-8c98-42f9-a083-f540ad23d1db" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="7f911b0d-58c0-4b15-aa74-918b01d460e4" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="26d58977-b2f0-4f73-b3d8-af1dbb0f85af" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="a53044e0-8c98-42f9-a083-f540ad23d1db" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="00e0f528-b333-4b62-9cb2-d0f635333413" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a893887c-dc39-4f5d-87ab-b789bb7912ec" LastKnownName="Logger" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="3eac5aaa-690f-451a-9e49-d7de55526c9a" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7f911b0d-58c0-4b15-aa74-918b01d460e4" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a893887c-dc39-4f5d-87ab-b789bb7912ec" LastKnownName="Logger" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="26d58977-b2f0-4f73-b3d8-af1dbb0f85af" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a893887c-dc39-4f5d-87ab-b789bb7912ec" LastKnownName="Logger" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7a97ffa5-75cf-4770-a265-7686e90f3f28" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="d6c78f61-b43f-496d-a5c0-1b0dd97a93d6" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="6593d67d-39ed-4bf8-bbb0-a6b32b990b97" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a893887c-dc39-4f5d-87ab-b789bb7912ec" LastKnownName="Logger" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="8b6ee6ba-1187-49d0-b343-8d6eeed13d24" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="cafc651f-f84d-4047-8e0f-8f7ebf06ab97" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5fa0e789-c656-42d2-843d-597729914727" LastKnownName="SAP" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="dc76bc78-97da-4fd8-ad6c-f2385b7ee83b" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a893887c-dc39-4f5d-87ab-b789bb7912ec" LastKnownName="Logger" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="346b4809-69a9-4623-9a37-599e8201b0e7" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" LastKnownName="Umweltverschmutzung" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="2c551781-11c5-4452-803d-b585aa65eb69" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="77a41364-121b-41ce-8b7d-be8931133a84" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="54320e58-9923-4255-a95e-7037581844d1" LastKnownName="this : Payola" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="54320e58-9923-4255-a95e-7037581844d1" name="this : Payola" isActor="false" lifelineDisplayName="this : Payola" referencedInstance="(Assembly=$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri) Namespace=MessagePassingDemoSnippets Type=Payola ObjectInstance=&quot;Object instance 3&quot;)" referencedType="MessagePassingDemoSnippets‎.Payola">
+            <referencesInternal>
+              <reference Id="a94f3f95-9d5f-4a17-942c-7b70df83118d" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=MessagePassingDemoSnippets)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=Payola)&quot;)" tag="DGQL" />
+              <reference Id="dea44f5e-78a0-4cec-b1c3-a58780985bc2" handle="(Assembly=&quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&quot; Namespace=MessagePassingDemoSnippets Type=Payola)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="fa0991a6-f3ee-42dc-934a-6a5251ad42de" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="2c551781-11c5-4452-803d-b585aa65eb69" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="e4b16a55-0099-4a8a-8219-0fc6b604a519" name="Umweltverschmutzung" isActor="false" lifelineDisplayName="Umweltverschmutzung" referencedInstance="(Assembly=$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri) Namespace=MessagePassingDemoSnippets Type=Payola Member=(Name=SendInvoiceData OverloadingParameters=[(Assembly=$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri) Namespace=MessagePassingDemoSnippets Type=InvoiceData),(Assembly=$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri) Namespace=MessagePassingDemoSnippets Type=Umweltverschmutzung)]) ParameterIdentifier=webServiceClient ObjectInstance=&quot;Object instance 2&quot;)" referencedType="MessagePassingDemoSnippets‎.Umweltverschmutzung">
+            <referencesInternal>
+              <reference Id="3c6bb667-8be5-4feb-8513-4e68ff51583a" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=MessagePassingDemoSnippets)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=Umweltverschmutzung)&quot;)" tag="DGQL" />
+              <reference Id="2790209a-f2ab-4716-a4b0-fd296955f061" handle="(Assembly=&quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&quot; Namespace=MessagePassingDemoSnippets Type=Umweltverschmutzung)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="7fd62edf-c4a8-4973-9e3c-03a415238555" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="15292d21-1098-4625-b224-d1cfe64e2cba" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="a7e855b5-1397-4f18-ad6d-61434995d3a7" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="7e8f2c64-8d67-4043-a19c-56ca96a3b218" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="0a17eddc-2f27-4631-8c2e-e1bdf00c3c8f" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="346b4809-69a9-4623-9a37-599e8201b0e7" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="5fa0e789-c656-42d2-843d-597729914727" name="SAP" isActor="false" lifelineDisplayName="SAP" referencedInstance="(Assembly=$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri) Namespace=MessagePassingDemoSnippets Type=Umweltverschmutzung Member=_sap ObjectInstance=&quot;Object instance 4&quot;)" referencedType="MessagePassingDemoSnippets‎.SAP">
+            <referencesInternal>
+              <reference Id="7396139b-ebd7-4bc5-b387-24679744ef6a" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=MessagePassingDemoSnippets)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=SAP)&quot;)" tag="DGQL" />
+              <reference Id="821a7365-4d09-4b2b-9c13-ed43f149cfa2" handle="(Assembly=&quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&quot; Namespace=MessagePassingDemoSnippets Type=SAP)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="16ccaf11-4203-4b3c-966c-82fd2bb7c522" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="9da20f8b-88b5-4d08-bfe0-0e6470cd8453" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="ce8e75df-dc04-45ed-bc46-3d5cb088f1e1" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="baec2c13-b551-4cad-b107-cf23cc160e19" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="1eaa6a92-a133-4c6a-85a9-ce30e246e217" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="cafc651f-f84d-4047-8e0f-8f7ebf06ab97" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="a893887c-dc39-4f5d-87ab-b789bb7912ec" name="Logger" isActor="false" lifelineDisplayName="Logger" referencedType="MessagePassingDemoSnippets‎.Logger">
+            <referencesInternal>
+              <reference Id="4c208594-c369-4977-bc51-675aa5c61833" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=MessagePassingDemoSnippets)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=Logger)&quot;)" tag="DGQL" />
+              <reference Id="db8191d0-5575-46a3-a2cb-7694ab6feb03" handle="(Assembly=&quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&quot; Namespace=MessagePassingDemoSnippets Type=Logger)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="52c5376f-c9f1-4887-bce7-570600e49c4a" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="be0c2d38-d50b-47bf-a27d-740d8b1a9f00" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="428777a1-a53b-46fc-8e6c-70ca527c1fdf" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="a53044e0-8c98-42f9-a083-f540ad23d1db" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="d6c78f61-b43f-496d-a5c0-1b0dd97a93d6" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="dc76bc78-97da-4fd8-ad6c-f2385b7ee83b" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="19b5b7fd-5af2-4bdd-97af-b3eec2d4f33e" name="SendInvoiceData" messageKind="Found" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="1fc7a38a-a7a4-4d35-b456-f2a910f872da" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=MessagePassingDemoSnippets)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=Payola)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=Payola Member=(Name=SendInvoiceData OverloadingParameters=[(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=InvoiceData),(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=Umweltverschmutzung)]))&quot;)" tag="DGQL" />
+              <reference Id="c729b2d7-7138-478c-b8c8-7797a04b3602" handle="(Assembly=&quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&quot; Namespace=MessagePassingDemoSnippets Type=Payola Member=(Name=SendInvoiceData OverloadingParameters=[(Assembly=&quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&quot; Namespace=MessagePassingDemoSnippets Type=InvoiceData),(Assembly=&quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&quot; Namespace=MessagePassingDemoSnippets Type=Umweltverschmutzung)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <lostFoundTargetMoniker Id="32d4a7d3-1d0c-44e1-b28e-d21627e605c4" LastKnownName="LostFoundTarget" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="b272413c-e39e-41c0-9aa8-c6ec05701185" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="d4ad3424-575f-4377-9e5f-58b15d95cff7" name="ReceiveInvoiceData" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="webServiceClient.ReceiveInvoiceData(invoiceData)">
+            <referencesInternal>
+              <reference Id="205cf199-df5e-4736-85ff-2107663dd974" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=MessagePassingDemoSnippets)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=Umweltverschmutzung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=Umweltverschmutzung Member=(Name=ReceiveInvoiceData OverloadingParameters=[(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=InvoiceData)]))&quot;)" tag="DGQL" />
+              <reference Id="efe0ef9b-5793-4b73-9d87-69ac911892a6" handle="(Assembly=&quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&quot; Namespace=MessagePassingDemoSnippets Type=Umweltverschmutzung Member=(Name=ReceiveInvoiceData OverloadingParameters=[(Assembly=&quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&quot; Namespace=MessagePassingDemoSnippets Type=InvoiceData)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="2086541b-2f1a-44b0-a06e-3ac33618060b" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="7d4e25e4-c3a4-46d7-9c08-12fe1dacede8" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="f774a792-6b8d-473e-85fb-1e7b2005c6ad" name="StoreInvoiceData" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="_sap.StoreInvoiceData(invoiceData)">
+            <referencesInternal>
+              <reference Id="49f4eb52-2672-46ea-a1fe-24ababc15ff4" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=MessagePassingDemoSnippets)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=SAP)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=SAP Member=(Name=StoreInvoiceData OverloadingParameters=[(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=InvoiceData)]))&quot;)" tag="DGQL" />
+              <reference Id="2ada44cf-f96f-445b-a67b-3e9ab7f94974" handle="(Assembly=&quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&quot; Namespace=MessagePassingDemoSnippets Type=SAP Member=(Name=StoreInvoiceData OverloadingParameters=[(Assembly=&quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&quot; Namespace=MessagePassingDemoSnippets Type=InvoiceData)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="27f9e2a8-d8f3-4202-a790-7b8c5cf72b25" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="209c72ca-4ace-43f5-875c-cb42a2452c12" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="8df904d2-bf09-4d60-b371-18003c55b75e" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="42ab1c63-9542-44fd-aceb-4e1be0aaf780" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="f3473b35-44f4-42eb-bcf7-a5da817a2a50" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="28e88490-0b52-475e-a6b3-7104d82fab29" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="22d13f72-2e4c-4d26-b3e3-422c934a821c" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="767221d0-a397-4842-bb82-1130a7632b93" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="c56f7393-4036-4752-9ff3-6ad00331d0dd" name="Log" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="Logger.Log(&quot;Error: &quot; + e.ToString())">
+            <referencesInternal>
+              <reference Id="a97abe40-7215-4ca5-9b80-71171b6e74c8" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=MessagePassingDemoSnippets)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=Logger)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&amp;quot; Namespace=MessagePassingDemoSnippets Type=Logger Member=(Name=Log OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=String)]))&quot;)" tag="DGQL" />
+              <reference Id="0cbf1a7a-0629-4fc2-badd-2dcef93a66f6" handle="(Assembly=&quot;$(a6479b93-e774-4a4b-bdf8-340993b7874c.OutputPathUri)&quot; Namespace=MessagePassingDemoSnippets Type=Logger Member=(Name=Log OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=String)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="3eac5aaa-690f-451a-9e49-d7de55526c9a" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="7f911b0d-58c0-4b15-aa74-918b01d460e4" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="273a5547-c0bb-49f4-8659-4248b0bf5d3c" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="26d58977-b2f0-4f73-b3d8-af1dbb0f85af" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="7a97ffa5-75cf-4770-a265-7686e90f3f28" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="8fcf7b8c-86ba-4c04-acb8-439b12900194" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="77a41364-121b-41ce-8b7d-be8931133a84" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="17c5cdfd-8acb-4f18-89cf-c1c9ccf71510" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3239b733-7eb8-4af7-87a0-59103fd37338" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="e2f7fd4f-7c70-4802-8065-f25db0888bd9" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="69eed9c9-fd3e-4f7e-8669-2884e4207aa2" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="00e0f528-b333-4b62-9cb2-d0f635333413" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="6593d67d-39ed-4bf8-bbb0-a6b32b990b97" name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+</SequenceDesignerModel>
